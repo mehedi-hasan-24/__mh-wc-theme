@@ -1,0 +1,26 @@
+/*
+Theme Name: __mh-wc-theme
+Theme URI: https://github.com/mehedi-hasan-24/__mh-wc-theme.git
+Author: Md. Mehedi Hasan
+Author URI: https://github.com/mehedi-hasan-24
+Description: Deigned for basic template of woocommerce supported theme. This theme will be used for building many wordpress website with a predefined frameworks.
+Requires at least: 5.9
+Tested up to: 6.6
+Requires PHP: 5.6
+Version: 0.0
+License: Apache License
+License URI: http://www.apache.org/licenses/
+Text Domain: __mh_wc_theme
+Tags: ecommerce, woocommerce, tailwind, responsive
+
+__mh-wc-theme WordPress Theme, (C) 2021 WordPress.org
+__mh-wc-theme will be used for personal projects only.
+*/
+
+/*
+ * Font smoothing.
+ * This is a niche setting that will not be available via Global Styles.
+ * https://github.com/WordPress/gutenberg/issues/35934
+ */
+
+
