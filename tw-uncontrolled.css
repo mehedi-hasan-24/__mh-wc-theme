@@ -3,8 +3,18 @@
  */
 
  
- #nav-main-menu ul {
-    @apply flex gap-8 text-red-500;
+ #nav-main-menu {
+    /* Main Menu ID */
+ }
+ .__mh-wc-theme-main-nav{
+   @apply  font-bold flex flex-col pc:flex-row space-y-2 pc:space-y-0 space-x-0 pc:space-x-2 text-center;
+
+ }
+ .__mh-wc-theme-main-nav-item{
+
+ }
+ .__mh-wc-theme-main-nav-anchor{
+
  }
  #__mh-wc-product-image {
    @apply bg-red-200;

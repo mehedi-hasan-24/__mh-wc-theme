@@ -12,14 +12,20 @@
    
   <?php wp_head(); ?>
 </head>
-<main class="grid grid-cols-1 grid-rows-[auto_1fr_auto] min-h-screen">
-    <header id="header_area"  ?>
-        <div class="flex justify-between">
+<main class="grid grid-cols-1 grid-rows-[auto_1fr_auto] min-h-screen relative">
+    <header id="header_area" >
+        <div class="flex flex-col pc:flex-row pc:justify-between w-full absolute pc:static z-[99999] bg-red-500 pc:bg-transparent h-screen pc:h-auto">
             <div class="">
-            <a href="<?php echo home_url(); ?>">Home..</a>
+                <a href="<?php echo home_url(); ?>">Home..</a>
             </div>
-            <div class="text-blue-800">
-                <?php wp_nav_menu( array('theme_location' => 'main_menu', 'menu_id' => 'nav-main-menu') ); ?>
+            <div>
+                <?php wp_nav_menu( array(
+                        'theme_location' => 'main_menu', 
+                        'container' => false,
+                        'items_wrap' => '<ul id="%1$s" class="__mh-wc-theme-main-nav">%3$s</ul>',
+                        'menu_id' => 'nav-main-menu',
+                    )); 
+                ?>
             </div>
         </div>
 
