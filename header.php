@@ -15,7 +15,7 @@
 <main class="grid grid-cols-1 grid-rows-[auto_1fr_auto] min-h-screen relative">
     <header id="header_area" >
         <div class="flex flex-col pc:flex-row pc:justify-between w-full absolute pc:static z-[99999] bg-red-500 pc:bg-transparent h-screen pc:h-auto">
-            <div class="">
+            <div class="bg-green-200">
                 <a href="<?php echo home_url(); ?>">Home..</a>
             </div>
             <div>

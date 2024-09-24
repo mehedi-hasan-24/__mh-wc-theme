@@ -17,10 +17,12 @@ __mh-wc-theme WordPress Theme, (C) 2021 WordPress.org
 __mh-wc-theme will be used for personal projects only.
 */
 
-/*
- * Font smoothing.
- * This is a niche setting that will not be available via Global Styles.
- * https://github.com/WordPress/gutenberg/issues/35934
- */
 
+ 
+.bg-primary {
+    background-color: var(--primary-color);
+ }
+ .bg-secondary {
+    background-color: var(--secondary-color);
+ }
 

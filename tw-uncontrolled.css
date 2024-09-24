@@ -17,11 +17,9 @@
 
  }
  #__mh-wc-product-image {
-   @apply bg-red-200;
+   
  }
-img {
-   @apply !h-4 !w-4; 
-}
+
 .wc-tabs {
    @apply flex bg-blue-400;
 }

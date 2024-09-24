@@ -3,7 +3,7 @@
 * The main template file
 */ 
 get_header(); ?>
-<div class="woocommerce">
+<div class="woocommerce overflow-x-hidden">
     <?php 
         if ( function_exists( 'woocommerce_content' ) ) {
             woocommerce_content();
