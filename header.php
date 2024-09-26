@@ -16,9 +16,17 @@
     <header id="header_area" class="overflow-hidden" >
 
     <!-- PC -->
-        <div class="hidden pc:flex pc:flex-row pc:justify-between w-full bg-secondary">
+        <div class="hidden pc:flex pc:flex-row pc:justify-between pc:items-center w-full bg-secondary">
             <div class="text-color-third flex justify-between">
-                <a href="<?php echo home_url(); ?>">Home..</a>      
+                <a href="<?php echo home_url(); ?>">
+                    <?php 
+                        if(has_custom_logo()){
+                            the_custom_logo();
+                        }else{
+                            echo bloginfo("title");
+                        }
+                    ?>
+                </a>      
             </div>
            
             <div class="hidden pc:w-auto pc:block bg-secondary text-color-third pc:h-auto" id="pc-main-nav-container">
@@ -35,7 +43,15 @@
         <!-- Mobile ANd Tab -->
         <div class="pc:hidden flex justify-between bg-secondary">
             <div class="text-color-third flex justify-between">
-                <a href="<?php echo home_url(); ?>">Home..</a>      
+                <a href="<?php echo home_url(); ?>">
+                    <?php 
+                        if(has_custom_logo()){
+                            the_custom_logo();
+                        }else{
+                            echo bloginfo("title");
+                        }
+                    ?>
+                </a>      
             </div>
            <!-- Hamburger -->
                 <div class="h-10 w-10 block pc:static pc:hidden" id="hamburger-container">
