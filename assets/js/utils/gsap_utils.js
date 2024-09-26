@@ -26,14 +26,24 @@ const addAnimationToNavBar = ()=>{
     //     rotation: 180
     // });
 
-    nav_menu_tl.from(".gsap-main-nav", 
-        { x: '100%', opacity: 0, stagger: 0.2 }, 
-    )
 
-    nav_menu_tl.from(".__mh-wc-theme-main-nav-item", {
-        x: "100%",
-        stagger: 0.05
+    // Animate the main nav coming into view from the right
+    nav_menu_tl.from(".gsap-main-nav", {
+        x: '100%',        // Move to its original position (from right to left)
+        opacity: 1,     // Fade it in
+        ease: "power2.out",
+        stagger: 0.5,   // Delay between elements (if multiple)
+        // immediateRender: false // Ensure GSAP doesn't render prematurely
     });
+    
+    // Animate individual nav items with stagger
+    nav_menu_tl.from("#nav-main-menu-tab li", {
+        x: '100%',        // Move each item from 100% off-screen right to its place
+        opacity: 1,     // Fade each item in
+        stagger: 0.1,  // Stagger for smooth sequence
+        ease: "power2.out",
+        // immediateRender: false // Prevent premature rendering
+    }, "-=0.5"); 
 
 
     nav_menu_tl.pause();

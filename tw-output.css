@@ -584,6 +584,10 @@ video {
   position: relative;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -592,20 +596,12 @@ video {
   top: 0px;
 }
 
-.left-0 {
-  left: 0px;
-}
-
 .z-\[1000\] {
   z-index: 1000;
 }
 
 .z-\[1005\] {
   z-index: 1005;
-}
-
-.z-\[1010\] {
-  z-index: 1010;
 }
 
 .mx-auto {
@@ -649,20 +645,12 @@ video {
   height: 12rem;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-5 {
-  height: 1.25rem;
-}
-
-.h-8 {
-  height: 2rem;
-}
-
 .h-6 {
   height: 1.5rem;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .min-h-screen {
@@ -677,6 +665,10 @@ video {
   width: 12rem;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
 .w-\[50\%\] {
   width: 50%;
 }
@@ -687,18 +679,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-5 {
-  width: 1.25rem;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .max-w-4xl {
@@ -747,6 +727,10 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -763,10 +747,6 @@ video {
   border-width: 1px;
 }
 
-.border-b-2 {
-  border-bottom-width: 2px;
-}
-
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -775,11 +755,6 @@ video {
 .border-green-300 {
   --tw-border-opacity: 1;
   border-color: rgb(134 239 172 / var(--tw-border-opacity));
-}
-
-.border-b-red-600 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(220 38 38 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -830,6 +805,11 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-2 {
@@ -941,14 +921,16 @@ video {
 
 .__mh-wc-theme-main-nav-item {
   width: 100%;
-  border-bottom-width: 2px;
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(220 38 38 / var(--tw-border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 @media (min-width: 1024px) {
   .__mh-wc-theme-main-nav-item {
     width: auto;
+    padding: 0px;
   }
 }
 
@@ -1010,6 +992,12 @@ video {
   background-color: rgb(153 27 27 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 640px) {
+  .tab\:hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 1024px) {
   .pc\:static {
     position: static;
@@ -1017,6 +1005,10 @@ video {
 
   .pc\:block {
     display: block;
+  }
+
+  .pc\:flex {
+    display: flex;
   }
 
   .pc\:hidden {

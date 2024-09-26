@@ -25,4 +25,27 @@ __mh-wc-theme will be used for personal projects only.
  .bg-secondary {
     background-color: var(--secondary-color);
  }
+ 
+ .bg-third {
+   background-color: var(--third-color);
+}
+.bg-fourth {
+  background-color: var(--fourth-color);
+}
+ .text-color-primary{
+   color: var(--primary-color);
+ }
+ .text-color-secondary{
+   color: var(--secondary-color);
+ }
+ .text-color-third{
+   color: var(--third-color);
+ }
+ 
+ .text-color-fourth{
+   color: var(--fourth-color);
+ }
 
+ .border-primary {
+   border-color: var(--primary-color);
+}
