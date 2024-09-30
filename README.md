@@ -17,3 +17,4 @@ Woocommerce supported theme with tailwind.
 
 ### TODOS
 - [ ] Making reusable components
+- [ ] See how to use npm packages in wp

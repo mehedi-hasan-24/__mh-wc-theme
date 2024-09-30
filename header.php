@@ -13,7 +13,49 @@
   <?php wp_head(); ?>
 </head>
 <main class="grid grid-cols-1 grid-rows-[auto_1fr_auto] min-h-screen relative">
-    <header id="header_area" class="overflow-hidden" >
+    <header id="header_area" class="overflow-hidden " >
+
+    <div class="grid grid-cols-[2fr_3fr] px-4 pc:px-8">
+        <div>
+            <a href="<?php echo home_url(); ?>">
+                <?php 
+                    if(has_custom_logo()){
+                        the_custom_logo();
+                    }else{
+                        echo bloginfo("title");
+                    }
+                ?>
+            </a>      
+        </div>
+        <div class="grid grid-cols-3">
+            <div class="flex space-x-2 items-center">
+                <div class="h-8 w-8 bg-secondary rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-location-dot text-color-primary"></i>
+                </div>
+                <div class="flex flex-col space-y-1">
+                    <span>Our Location</span>
+                    <span>22 Madi Ave, New York</span>
+                </div>
+            </div>
+            <div class="flex space-x-2 items-center">
+                <div class="h-8 w-8 bg-secondary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-envelope text-color-primary"></i>
+                </div>
+                <div class="flex flex-col space-y-1">
+                    <span>Send Us Mail</span>
+                    <a href="mailto:<?php echo get_option('admin_email'); ?>">
+                        <span><?php echo get_option('admin_email'); ?></span>
+                    </a>
+                </div>
+            </div>
+            <div class="items-center flex">
+                <button class="bg-primary w-[50%] px-4 py-2 flex items-center space-x-2 text-color-third">
+                    <span>Get a quote</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <!-- PC -->
         <div class="hidden pc:flex pc:flex-row pc:justify-between pc:items-center w-full bg-secondary">
