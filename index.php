@@ -4,6 +4,8 @@
 */ 
 get_header(); ?>
 
+<main class="grid grid-cols-1 grid-rows-[auto_1fr_auto] min-h-screen relative">
+
     <div class="woocommerce-fallback">
         This is BODDY! BRO... :D
         <p class="bg-primary">
@@ -46,5 +48,7 @@ get_header(); ?>
 
             
     </div>
+
+</main>
 
 <?php get_footer(); ?>

@@ -26,4 +26,30 @@ const swiper = new Swiper('.swiper', {
   });
 
   console.log(swiper);
+// FOR Testing product filterss
+  jQuery(document).ready(function($) {
+    $('#apply_filters').on('click', function(e) {
+        e.preventDefault();
+        console.log("clicked...");
+        
+        var category = $('#filter_product_cat').val();
+        var minPrice = $('#min_price').val();
+        var maxPrice = $('#max_price').val();
+
+        $.ajax({
+            url: my_ajax_object.ajax_url, // Use wp_localize_script to pass this variable
+            type: 'POST',
+            data: {
+                action: 'filter_products',
+                category: category,
+                min_price: minPrice,
+                max_price: maxPrice
+            },
+            success: function(response) {
+                $('#shop-products-container').html(response); // Update products container
+            }
+        });
+    });
+});
+
   

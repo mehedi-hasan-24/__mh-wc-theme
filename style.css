@@ -49,3 +49,66 @@ __mh-wc-theme will be used for personal projects only.
  .border-primary {
    border-color: var(--primary-color);
 }
+
+
+/*!* Add specificity *!*/
+/* Style for the noUiSlider handles */
+/* Style for the noUiSlider handles */
+#slider .noUi-handle {
+    width: 10px;                            /* Handle width */
+    height: 20px;                           /* Handle height */
+    /*border-radius: 50%;                     !* Make it circular *!*/
+    background-image: none !important;      /* Remove any gradient */
+    border: none !important;                 /* Remove border */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);            /* Remove shadow */
+    outline: none !important;
+    cursor: grabbing;            /* Remove outline */
+    transform: translateX(-10px);
+}
+
+/* Remove any vertical line from pseudo-elements */
+#slider .noUi-handle:before,
+#slider .noUi-handle:after {
+    content: none !important;                /* Ensure pseudo-elements are removed */
+}
+
+/* Change the background color of the connect area */
+#slider .noUi-connect {
+    background-color: var(--primary-color) !important; /* Your desired color */
+}
+
+/* Customize tooltip background and text color */
+.noUi-handle .noUi-tooltip {
+    background-color: var(--primary-color); /* Background color (blue) */
+    color: #ffffff;            /* Text color (white) */
+    border-radius: 4px;        /* Optional: Rounded corners */
+    padding: 5px 10px;         /* Optional: Padding for spacing */
+    font-size: 12px;           /* Font size of the tooltip */
+    font-weight: bold;         /* Optional: Make the text bold */
+    display: none;
+}
+
+/* Tooltip appearance when hovering on handle */
+.noUi-handle:hover .noUi-tooltip {
+    display: block;
+    overflow: hidden;
+}
+
+
+/* Set default height for slider components */
+#slider {
+    height: 10px; /* Set the default height for the slider track */
+    width: 100%;  /* Adjust width as needed */
+    background-color: var(--primary-color);
+    border-radius: 0px;
+}
+
+.noUi-target, .noUi-base, .noUi-connects {
+    height: 100%; /* Ensure all components share the same height */
+}
+
+
+/* Style the connecting bar */
+.noUi-connect {
+    height: 100%; /* Ensure it matches the slider height */
+}
